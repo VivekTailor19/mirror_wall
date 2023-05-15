@@ -5,8 +5,8 @@
 
 # all in one ott platform
 https://github.com/VivekTailor19/mirror_wall/assets/119835214/b289c8ea-d3be-4c4f-b91e-2965fd80b484
+
 <p>
-   
    <img src = "https://github.com/VivekTailor19/mirror_wall/assets/119835214/e939ebfd-4032-45ae-9d7a-b9c253920e53" height = "600" width = "280">
   <img src = "https://github.com/VivekTailor19/mirror_wall/assets/119835214/7cd6872b-d745-423d-b6e9-ccadbb1bbe81" height = "600" width = "280">
   <img src = "https://github.com/VivekTailor19/mirror_wall/assets/119835214/21f9fdc6-d0d4-4d8e-b396-6caa109483b4" height = "600" width = "280">
