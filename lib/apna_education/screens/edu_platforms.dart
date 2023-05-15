@@ -22,6 +22,7 @@ class _Edu_PlatformsState extends State<Edu_Platforms> {
     eduT = Provider.of<EducationProvider>(context);
     eduF = Provider.of<EducationProvider>(context,listen: false);
 
+
     return Scaffold(
       body: GridView.builder(
           itemCount: eduF!.platformlist.length,
