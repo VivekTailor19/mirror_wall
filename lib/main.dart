@@ -20,7 +20,7 @@ void main() {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: "ott",
+        //initialRoute: "ott",
         routes: {
           "/":(context) => Edu_Platforms(),
           "edupage":(context) => Edu_WebPages(),

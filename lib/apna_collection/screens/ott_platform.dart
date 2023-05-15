@@ -79,28 +79,32 @@ class _OTT_PageState extends State<OTT_Page> {
 
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  onPressed: () => webcontroller!.goBack(),
-                  icon: Icon(Icons.arrow_back_rounded),
-                  iconSize: 25,
-                  color: Colors.black87,
-                ),
-                IconButton(
-                  onPressed: () => webcontroller!.reload(),
-                  icon: Icon(Icons.refresh_rounded),
-                  iconSize: 25,
-                  color: Colors.black87,
-                ),
-                IconButton(
-                  onPressed: () => webcontroller!.goForward(),
-                  icon: Icon(Icons.arrow_forward_rounded),
-                  iconSize: 25,
-                  color: Colors.black87,
-                ),
-              ],
+            Container(
+
+              decoration: BoxDecoration(border: Border.all(color: Colors.black),color: Colors.black,),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    onPressed: () => webcontroller!.goBack(),
+                    icon: Icon(Icons.arrow_back_rounded),
+                    iconSize: 25,
+                    color: Colors.white,
+                  ),
+                  IconButton(
+                    onPressed: () => webcontroller!.reload(),
+                    icon: Icon(Icons.refresh_rounded),
+                    iconSize: 25,
+                    color: Colors.white,
+                  ),
+                  IconButton(
+                    onPressed: () => webcontroller!.goForward(),
+                    icon: Icon(Icons.arrow_forward_rounded),
+                    iconSize: 25,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
             ),
           ],
         ),

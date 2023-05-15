@@ -24,6 +24,7 @@ class _Edu_PlatformsState extends State<Edu_Platforms> {
 
 
     return Scaffold(
+      appBar: AppBar(title: Text("Mera_Education",style: TextStyle(color: Colors.teal),),centerTitle: true,elevation: 0,backgroundColor: Colors.white,),
       body: GridView.builder(
           itemCount: eduF!.platformlist.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
