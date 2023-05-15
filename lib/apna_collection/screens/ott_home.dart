@@ -2,30 +2,31 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 
-import '../model/platform_model.dart';
-import '../provider/education_provider.dart';
+import '../model/ottmode.dart';
+import '../provider/ott_provider.dart';
 
-class Edu_Platforms extends StatefulWidget {
-  const Edu_Platforms({Key? key}) : super(key: key);
+class Apna_OTT extends StatefulWidget {
+  const Apna_OTT({Key? key}) : super(key: key);
 
   @override
-  State<Edu_Platforms> createState() => _Edu_PlatformsState();
+  State<Apna_OTT> createState() => _Apna_OTTState();
 }
 
-class _Edu_PlatformsState extends State<Edu_Platforms> {
+class _Apna_OTTState extends State<Apna_OTT> {
 
-  EducationProvider? eduT;
-  EducationProvider? eduF;
+  OTTProvider? ottT;
+  OTTProvider? ottF;
 
   @override
   Widget build(BuildContext context) {
-    eduT = Provider.of<EducationProvider>(context);
-    eduF = Provider.of<EducationProvider>(context,listen: false);
+
+    ottT = Provider.of<OTTProvider>(context);
+    ottF = Provider.of<OTTProvider>(context,listen: false);
 
 
     return Scaffold(
       body: GridView.builder(
-          itemCount: eduF!.platformlist.length,
+          itemCount: ottF!.platformlist.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2
           ),
@@ -34,12 +35,12 @@ class _Edu_PlatformsState extends State<Edu_Platforms> {
               onTap: () {
                 Navigator.pushNamed(context, "edupage",arguments: index);
               },
-                child: PlatformTab(eduT!.platformlist[index]));
+                child: OTTTab(ottT!.platformlist[index]));
           },)
     );
   }
 
-  Widget PlatformTab(PlatformModel pm)
+  Widget OTTTab(OTTModel pm)
   {
     return Padding(
       padding: const EdgeInsets.all(5),
